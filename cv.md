@@ -16,7 +16,7 @@ Although I have no commercial experience yet, I have successfully completed seve
 
 ---
 
-## 🛠 Skills
+## Skills
 
 - **Languages**: HTML5, CSS3, JavaScript (ES6+)
 - **Frameworks/Libraries**: React (studying), Bootstrap
@@ -62,7 +62,9 @@ const sanitizeFileName = (name) => {
         .toLowerCase();            // Convert to lowercase
 };
 
-  ##  Education & Trainings
+---
+
+  ## Education & Trainings
 
 - **1995–2000** — DGFEC (Dnipro State Financial and Economic Institute), Faculty of Enterprise Finance
   *Graduated with a degree in Finance*
@@ -71,7 +73,7 @@ const sanitizeFileName = (name) => {
   - Obtained international certification
   - Participated in USAID programs for non-financial managers
 
-###  IT Courses — SoftServe Academy
+### IT Courses — SoftServe Academy
 
 - **HTML5 / CSS3 / JavaScript Fundamentals** — May–June 2024
 - **JavaScript / TypeScript Fundamentals** — July–August 2024
@@ -79,9 +81,12 @@ const sanitizeFileName = (name) => {
 - **Database Fundamentals (MySQL, MongoDB)** — November 2024 – January 2025
 - **Advanced Frontend with React.js** — June 2025 – Present
 
+---
+
 ## Languages
 
 - **Ukrainian** — Native
 - **Russian** — Fluent
 - **English** — Intermediate (B1)
+
 ```
