@@ -56,22 +56,23 @@ The personal account includes order history and user data (editing not yet imple
 ```javascript
 // Function to create a safe file name
 const sanitizeFileName = (name) => {
-    return name
-        .replace(/[\s\W_]+/g, '-') // Replace spaces and special characters with dashes
-        .replace(/^-+|-+$/g, '')   // Remove leading and trailing dashes
-        .toLowerCase();            // Convert to lowercase
+  return name
+    .replace(/[\s\W_]+/g, "-") // Replace spaces and special characters with dashes
+    .replace(/^-+|-+$/g, "") // Remove leading and trailing dashes
+    .toLowerCase(); // Convert to lowercase
 };
+```
 
 ---
 
-  ## Education & Trainings
+## Education & Trainings
 
-- **1995–2000** — DGFEC (Dnipro State Financial and Economic Institute), Faculty of Enterprise Finance
-  *Graduated with a degree in Finance*
+**1995–2000** — DGFEC (Dnipro State Financial and Economic Institute), Faculty of Enterprise Finance
 
-- **2002–2005** — Professional development in accounting
-  - Obtained international certification
-  - Participated in USAID programs for non-financial managers
+**2002–2005** — Professional development in accounting
+
+- Obtained international certification
+- Participated in USAID programs for non-financial managers
 
 ### IT Courses — SoftServe Academy
 
@@ -88,5 +89,3 @@ const sanitizeFileName = (name) => {
 - **Ukrainian** — Native
 - **Russian** — Fluent
 - **English** — Intermediate (B1)
-
-```
