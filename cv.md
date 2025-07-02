@@ -1,2 +1,0 @@
-# Svitlana Mikheyeva
-## Adress: Dnipro
