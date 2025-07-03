@@ -1,0 +1,519 @@
+/* Сброс*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: #f8f5f0;
+  color: #4b3b2b;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  background: #fffdf7;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(75, 59, 43, 0.15);
+  overflow-wrap: break-word;
+}
+
+/* Хедер */
+.header__container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.header__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #b89b6e;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header__nav {
+  flex: 1 1 auto;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 1rem;
+  list-style: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #7a6f5a;
+}
+
+.nav__link {
+  color: #7a6f5a;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #4b3b2b;
+  outline: none;
+}
+
+/* Заголовок имени */
+.header__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  flex-basis: 100%;
+}
+
+/* Контакты */
+.header__contacts {
+  font-style: normal;
+  flex-basis: 100%;
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.contacts__link {
+  color: #b8935c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #4b3b2b;
+  text-decoration: underline;
+}
+
+/* Основной контент */
+.main-content {
+  margin: 2.5rem auto 0;
+  max-width: 700px;
+}
+
+/* Заголовки секций */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #4b3b2b;
+  border-bottom: 2px solid #b89b6e;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Текст и списки */
+.about__text,
+.skills__list,
+.project__description,
+.education__desc,
+.languages__list {
+  font-size: 1rem;
+  color: #5b4e3c;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.skills__list,
+.project__features-list,
+.project__links,
+.education__list,
+.languages__list {
+  padding-left: 1.2rem;
+  margin: 0 0 1.5rem;
+  color: #5b4e3c;
+}
+
+.skills__item,
+.project__features-list li,
+.project__links li,
+.education__desc ul li,
+.languages__item {
+  margin-bottom: 0.3rem;
+}
+
+/* Ссылки проектов */
+.project__links a {
+  color: #b89b6e;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project__links a:hover,
+.project__links a:focus {
+  color: #4b3b2b;
+  text-decoration: underline;
+}
+
+/* Код */
+.code-example__block {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: #f3f1e7;
+  border-radius: 6px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Образование */
+.education {
+  max-width: 700px;
+  color: #5b4e3c;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.education__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.education__term {
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #4b3b2b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+  border-left: 4px solid #b89b6e;
+  padding-left: 0.8rem;
+}
+
+.education__desc {
+  margin: 0 0 1rem 1.2rem;
+  font-weight: 400;
+  color: #6a5c46;
+}
+
+.education__desc ul {
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+}
+
+.education__desc ul li {
+  list-style: disc;
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  background: #fffdf7;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #b89b6e;
+  font-size: 0.9rem;
+  color: #7a6f5a;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__block--name {
+  flex-direction: column;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #7a6f5a;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #b89b6e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #4b3b2b;
+  text-decoration: underline;
+}
+
+.footer__icon,
+.footer__logo {
+  display: block;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.footer__year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  color: #4b3b2b;
+}
+
+.footer__name {
+  font-size: 1rem;
+}
+
+.footer__year-number {
+  font-size: 0.85rem;
+  color: #7a6f5a;
+  margin-top: 0.1rem;
+}
+
+/* = Адаптивность = */
+@media (max-width: 700px) {
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__photo {
+    margin-bottom: 1rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__title {
+    font-size: 2.2rem;
+  }
+
+  .main-content {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__block {
+    margin: 0.3rem 0;
+  }
+
+  .footer__icon,
+  .footer__logo {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 432px) {
+  .footer__icon,
+  .footer__logo {
+    max-height: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    padding: 1rem 0.5rem;
+  }
+}
+/* мобильная версия*/
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #b89b6e;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Для экранов от 700px и выше */
+@media (min-width: 700px) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "photo nav"
+      "photo title";
+    align-items: center;
+    gap: 1rem 2rem;
+  }
+
+  .header__photo {
+    grid-area: photo;
+    margin: 0;
+  }
+
+  .header__nav {
+    grid-area: nav;
+    justify-self: stretch;
+  }
+
+  .header__title {
+    grid-area: title;
+    font-size: 2.8rem;
+    text-align: left;
+    margin: 0;
+    justify-self: start;
+  }
+}
+.header__container {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "photo nav"
+    "photo title";
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.header__photo {
+  grid-area: photo;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #b89b6e;
+  object-fit: cover;
+  margin: 0;
+}
+
+.header__nav {
+  grid-area: nav;
+  justify-self: stretch;
+  width: 100%;
+}
+
+.header__title {
+  grid-area: title;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+}
+
+@media (max-width: 699px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Для экранов меньше 700px */
+@media (max-width: 699px) {
+  .header__contacts {
+    display: block;
+    white-space: normal;
+    margin-top: 1rem;
+  }
+
+  .contacts__list {
+    display: block;
+  }
+
+  .contacts__item {
+    margin-bottom: 0.4rem;
+  }
+
+  .contacts__link {
+    white-space: normal;
+  }
+}
+/* От 700px и выше */
+@media (min-width: 700px) {
+  .contacts__link {
+    white-space: nowrap;
+  }
+}
