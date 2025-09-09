@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Svitlana Mikheieva - Frontend Developer CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/free-icon-circle-button-458511.png"
+    >
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container header__container">
+          <img
+            src="img/my-photo1.jpg"
+            alt="Photo of Svitlana Mikheieva"
+            class="header__photo"
+            width="120"
+            height="120"
+          >
+
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#education" class="nav__link">Education</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="header__title">Svitlana Mikheieva</h1>
+
+          <address class="contacts header__contacts" id="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a
+                  href="mailto:svitlanamikheieva@gmail.com"
+                  class="contacts__link"
+                  target="_blank"
+                  >svitlanamikheieva@gmail.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380XXXXXXXXX" class="contacts__link"
+                  >+380&nbsp;(XX)&nbsp;XXX&#8209;XX&#8209;XX</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="https://github.com/SvetlanaForte-2000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contacts__link"
+                >
+                  GitHub: SvetlanaForte-2000
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a
+                  href="https://discord.gg/9CxqfSRG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contacts__link"
+                >
+                  Discord: Svitlana Mikheieva
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </header>
+      <main class="main-content">
+        <section id="about" class="about">
+          <h2 class="section-title">About Me</h2>
+          <p class="about__text">
+            I am a beginner front-end developer with a strong desire for
+            professional growth. Although I have no commercial experience yet, I
+            have successfully completed several educational projects and
+            continue to improve my skills daily. I strive to create clean,
+            responsive, and user-friendly interfaces. I'm also expanding my
+            knowledge in databases and DevOps to be a more versatile developer.
+          </p>
+        </section>
+
+        <section id="skills" class="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              Languages: HTML5, CSS3, JavaScript (ES6+)
+            </li>
+            <li class="skills__item">
+              Frameworks/Libraries: React (studying), Bootstrap
+            </li>
+            <li class="skills__item">
+              Tools: Git, GitHub, Figma, VS Code, npm
+            </li>
+            <li class="skills__item">Methodologies: BEM, responsive layout</li>
+            <li class="skills__item">
+              Databases: MySQL (basic), MongoDB (basic)
+            </li>
+            <li class="skills__item">
+              DevOps Basics: CI/CD fundamentals, Docker (basic)
+            </li>
+            <li class="skills__item">
+              Other: DOM manipulation, LocalStorage, API integration
+            </li>
+          </ul>
+        </section>
+        <section id="projects" class="projects">
+          <h2 class="section-title">Projects</h2>
+          <article class="project">
+            <h3 class="project__title">Online Store (Training Project)</h3>
+            <p class="project__description">
+              An educational multi-page online store website. Users must
+              register to place orders. A password is sent by email to access
+              the personal account. The personal account includes order history
+              and user data (editing not yet implemented).
+            </p>
+            <h4 class="project__subtitle">Implemented Features:</h4>
+            <ul class="project__features-list">
+              <li>
+                Multi-page structure (catalog, cart, checkout, personal account)
+              </li>
+              <li>Product search and filtering</li>
+              <li>Sorting by category</li>
+              <li>Cart with LocalStorage</li>
+              <li>
+                Promo codes (<code>SUMMER10</code>, <code>WINTER15</code>)
+              </li>
+              <li>Product pages generated via <code>generatePages.js</code></li>
+              <li>Nova Poshta API integration for city and branch search</li>
+            </ul>
+            <section class="project__links-section">
+              <h4 class="project__links-title">Links</h4>
+              <ul class="project__links">
+                <li>
+                  🔗 Live site:
+                  <a
+                    href="https://new-my-shop.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    new-my-shop.onrender.com
+                  </a>
+                </li>
+                <li>
+                  🔗 GitHub:
+                  <a
+                    href="https://github.com/SvetlanaForte-2000/new-my-shop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/SvetlanaForte-2000/new-my-shop
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </section>
+        <section id="code-example" class="code-example">
+          <h2 class="section-title">Code Example</h2>
+          <pre class="code-example__block"><code class="language-javascript">
+// Function to create a safe file name
+const sanitizeFileName = (name) =&gt; {
+return name
+    .replace(/[\s\W_]+/g, '-') // Replace spaces and special characters with dashes
+    .replace(/^-+|-+$/g, '')   // Remove leading and trailing dashes
+    .toLowerCase();            // Convert to lowercase
+};
+</code></pre>
+        </section>
+        <section id="education" class="education">
+          <h2 class="section-title">Education &amp; Trainings</h2>
+          <dl class="education__list">
+            <dt class="education__term">1995–2000</dt>
+            <dd class="education__desc">
+              <p>
+                DGFEC (Dnipro State Financial and Economic Institute), Faculty
+                of Enterprise Finance
+              </p>
+              <p><em>Graduated with a degree in Finance</em></p>
+            </dd>
+            <dt class="education__term">2002–2005</dt>
+            <dd class="education__desc">
+              <ul>
+                <li>Professional development in accounting</li>
+                <li>Obtained international certification</li>
+                <li>
+                  Participated in USAID programs for non-financial managers
+                </li>
+              </ul>
+            </dd>
+
+            <dt class="education__term">IT Courses — SoftServe Academy</dt>
+            <dd class="education__desc">
+              <ul>
+                <li>HTML5 / CSS3 / JavaScript Fundamentals — May–June 2024</li>
+                <li>JavaScript / TypeScript Fundamentals — July–August 2024</li>
+                <li>DevOps for Developers — August–November 2024</li>
+                <li>
+                  Database Fundamentals (MySQL, MongoDB) — November 2024 –
+                  January 2025
+                </li>
+                <li>Advanced Frontend with React.js — June 2025 – Present</li>
+              </ul>
+            </dd>
+          </dl>
+        </section>
+
+        <section id="languages" class="languages">
+          <h2 class="section-title">Languages</h2>
+          <ul class="languages__list">
+            <li class="languages__item">Ukrainian — Native</li>
+            <li class="languages__item">Russian — Fluent</li>
+            <li class="languages__item">English — Intermediate (B1)</li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__block footer__block--github">
+            <a
+              href="https://github.com/SvetlanaForte-2000"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              aria-label="My GitHub profile"
+            >
+              <img
+                src="img/github-icon.svg"
+                alt="GitHub Logo"
+                class="footer__icon"
+                width="24"
+                height="24"
+            >
+            </a>
+          </div>
+
+          <div class="footer__block footer__block--name">
+            <span class="footer__name">Svitlana Mikheieva</span>
+            <span class="footer__year-number">2025</span>
+          </div>
+
+          <div class="footer__block footer__block--rss">
+            <a
+              href="https://rs.school/courses/javascript-ru"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__link"
+              aria-label="RS School website"
+            >
+              <img
+                src="img/rss-logo.c19ce1b4.svg"
+                alt="RS School Logo"
+                class="footer__logo"
+                width="80"
+                height="30"
+            >
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
